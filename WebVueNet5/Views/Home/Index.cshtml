@@ -3,7 +3,7 @@
 @inject IHostEnvironment HostingEnv
 @{
     var vueUrl = HostingEnv.IsDevelopment() ? "/dist/vendor2.js" : "/dist/vendor2.min.js";
-    var mainUrl = HostingEnv.IsDevelopment() ? "/dist/app-bandle.js" : "/dist/app-bandle.min.js";
+    var mainUrl = HostingEnv.IsDevelopment() ? "/dist/home-bandle.js" : "/dist/home-bandle.min.js";
 
     ViewData["Title"] = "TryVueMvc Sample";
 }
@@ -19,7 +19,7 @@
     </script>
 
     <script>
-        $.get("dist/app-templates.html").done(function (data) {
+        $.get("dist/home-templates.html").done(function (data) {
             $('#app-templates').append(data);
             
             System.import("@mainUrl").then(function (m) {

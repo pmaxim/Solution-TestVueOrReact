@@ -53,7 +53,7 @@
     }
   },
   {
-    "outputFileName": "wwwroot/dist/app-bandle.min.js",
+    "outputFileName": "wwwroot/dist/home-bandle.min.js",
     "inputFiles": [
       "wwwroot/dist/app-bandle.js"
     ],
@@ -63,7 +63,7 @@
     }
   },
   {
-    "outputFileName": "wwwroot/dist/app-templates.html",
+    "outputFileName": "wwwroot/dist/home-templates.html",
     "inputFiles": [
       "ClientApp/components/home/*.html"
     ],

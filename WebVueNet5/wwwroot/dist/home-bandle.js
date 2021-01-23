@@ -87,4 +87,4 @@ System.register("index", ["vue", "AppHello"], function (exports_3, context_3) {
         }
     };
 });
-//# sourceMappingURL=app-bandle.js.map
+//# sourceMappingURL=home-bandle.js.map

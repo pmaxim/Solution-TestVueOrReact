@@ -6,7 +6,7 @@
     "target": "es5",
     "strict": true,
     "module": "system",
-    "outFile": "../../../wwwroot/dist/app-bandle.js",
+    "outFile": "../../../wwwroot/dist/home-bandle.js",
     "moduleResolution": "node",
     "esModuleInterop": true,
     "noEmitOnError": true
