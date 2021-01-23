@@ -1,6 +1,30 @@
-﻿@{
-    ViewData["Title"] = "Privacy Policy";
-}
-<h1>@ViewData["Title"]</h1>
+﻿@using Microsoft.Extensions.Hosting
 
-<p>Use this page to detail your site's privacy policy.</p>
+@inject IHostEnvironment HostingEnv
+@{
+    var vueUrl = HostingEnv.IsDevelopment() ? "/dist/vendor2.js" : "/dist/vendor2.min.js";
+    var mainUrl = HostingEnv.IsDevelopment() ? "/dist/privacy-bandle.js" : "/dist/privacy-bandle.min.js";
+
+    ViewData["Title"] = "Privacy";
+}
+<section id="app-templates"></section>
+<div id="app-root">loading..</div>
+@section Scripts{
+    <script type="systemjs-importmap">
+    {
+        "imports": {
+            "vue": "@vueUrl"
+        }
+    }
+    </script>
+
+    <script>
+        $.get("dist/privacy-templates.html").done(function (data) {
+            $('#app-templates').append(data);
+
+            System.import("@mainUrl").then(function (m) {
+                System.import('index');
+            });
+        });
+    </script>
+}
