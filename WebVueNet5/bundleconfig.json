@@ -71,26 +71,6 @@
       "enabled": false,
       "renameLocals": false
     }
-  },
-  {
-    "outputFileName": "wwwroot/dist/privacy-bandle.min.js",
-    "inputFiles": [
-      "wwwroot/dist/privacy-bandle.js"
-    ],
-    "minify": {
-      "enabled": true,
-      "renameLocals": true
-    }
-  },
-  {
-    "outputFileName": "wwwroot/dist/privacy-templates.html",
-    "inputFiles": [
-      "ClientApp/components/privacy/*.html"
-    ],
-    "minify": {
-      "enabled": false,
-      "renameLocals": false
-    }
   }
 ]
 

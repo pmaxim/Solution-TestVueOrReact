@@ -6,10 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\components\privacy\index.ts" />
-  </ItemGroup>
-
-  <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\dist\privacy-templates.html" />
   </ItemGroup>
 
@@ -20,10 +16,6 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\components\privacy\index.ts" />
   </ItemGroup>
 
 </Project>
